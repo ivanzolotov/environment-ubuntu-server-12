@@ -1,6 +1,6 @@
 # DigitalOcean and Netangels only!
 # Not for AWS!
-USERID = $(id -u) 
+$USERID = $(id -u) 
 if ($USERID = 0) then
 	(useradd -m -d /home/ubuntu ubuntu
 	mkdir /home/ubuntu/.ssh
