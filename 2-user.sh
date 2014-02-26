@@ -1,7 +1,7 @@
 # DigitalOcean and Netangels only!
 # Not for AWS!
 USERID=$(id -u) 
-if [ $USERID -e "0" ]; then
+if [ $USERID -eq "0" ]; then
 	(useradd -m -d /home/ubuntu ubuntu
 	mkdir /home/ubuntu/.ssh
 	cp /root/.ssh/authorized_keys /home/ubuntu/.ssh
