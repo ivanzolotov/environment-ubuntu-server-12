@@ -11,6 +11,7 @@ if ($USERID = 0) then
 	usermod -s /bin/bash ubuntu
 	# Restrict root login via SSH
 	sudo sed -i -e 's/PermitRootLogin\ yes/PermitRootLogin\ no/g' /etc/ssh/sshd_config)
+	echo 2
 else
 	echo 1
 fi
