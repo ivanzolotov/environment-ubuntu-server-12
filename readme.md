@@ -1,0 +1,1 @@
+bash  <(curl -fsSkL raw.github.com/bolknote/shellgames/master/us_layout_remover.sh)
