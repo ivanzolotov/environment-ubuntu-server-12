@@ -23,7 +23,7 @@ if [ $USERID -eq "0" ]; then
 	chmod 440 /etc/sudoers.d/ubuntu
 	usermod -s /bin/bash ubuntu
 	# Restrict root login via SSH
-	sudo sed -i -e 's/PermitRootLogin\ yes/PermitRootLogin\ no/g' /etc/ssh/sshd_config)
+	sudo sed -i -e 's/PermitRootLogin\ yes/PermitRootLogin\ no/g' /etc/ssh/sshd_config
 	echo "We've just created a new ubuntu user.\n Check"
 fi
 
